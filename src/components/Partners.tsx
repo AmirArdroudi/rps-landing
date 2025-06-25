@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, Users, DollarSign, Zap, Shield, TrendingUp, Bot, Trophy, Target, Calculator, Check } from 'lucide-react';
+import { ArrowRight, Users, DollarSign, Zap, Shield, TrendingUp, Bot, Trophy, Target, Calculator, Check, Star, Sparkles, Crown } from 'lucide-react';
 import Header from './Header';
 import ParticleEffect from './ParticleEffect';
 
@@ -260,8 +260,8 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* Why Join with Parallax Coin Images */}
-      <section className="relative py-16 px-4 overflow-hidden">
+      {/* Enhanced Why Join Section with Parallax Coin Images */}
+      <section className="relative py-24 px-4 overflow-hidden bg-gradient-to-br from-[rgb(235,234,231)] via-[rgb(245,244,241)] to-[rgb(235,234,231)]">
         {/* Left Coin Image with Parallax - Moves up as user scrolls down */}
         <div 
           className="absolute left-0 top-0 h-full w-32 md:w-48 lg:w-64 z-20 pointer-events-none"
@@ -273,7 +273,7 @@ const Partners = () => {
           <img
             src="/coins-left.png"
             alt="Coins Left"
-            className="h-full w-full object-cover object-right opacity-20"
+            className="h-full w-full object-cover object-right opacity-15"
           />
         </div>
         
@@ -288,45 +288,178 @@ const Partners = () => {
           <img
             src="/coins_right.png"
             alt="Coins Right"
-            className="h-full w-full object-cover object-left opacity-20"
+            className="h-full w-full object-cover object-left opacity-15"
           />
         </div>
 
         <div className="container mx-auto relative z-30">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#191970] mb-8 text-center scroll-animate fade-in-up">
-              ✅ Why Join?
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="bg-white/50 p-4 rounded-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all duration-300 scroll-animate fade-in-up">
-                <TrendingUp className="w-10 h-10 text-[#FFD700] mb-3" />
-                <h3 className="text-lg font-bold text-[#191970] mb-2">Passive Income</h3>
-                <p className="text-sm text-[#191970]/80">Earn from your existing community without any extra effort</p>
+          <div className="max-w-6xl mx-auto">
+            {/* Enhanced Header */}
+            <div className="text-center mb-16 scroll-animate fade-in-up">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#FFD700]/20 to-[#FFD700]/10 backdrop-blur-sm px-6 py-3 rounded-full border border-[#FFD700]/30 mb-6">
+                <Crown className="w-6 h-6 text-[#FFD700]" />
+                <span className="text-[#191970] font-bold text-lg">Why Join the Elite?</span>
+                <Sparkles className="w-6 h-6 text-[#FFD700]" />
               </div>
-              <div className="bg-white/50 p-4 rounded-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all duration-300 scroll-animate fade-in-up">
-                <Zap className="w-10 h-10 text-[#FFD700] mb-3" />
-                <h3 className="text-lg font-bold text-[#191970] mb-2">Fully Automated</h3>
-                <p className="text-sm text-[#191970]/80">No need to manage anything - set it and forget it</p>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#191970] mb-4 leading-tight">
+                Unlock Your Community's
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#FFD700]/80">
+                  Earning Potential
+                </span>
+              </h2>
+              <p className="text-xl text-[#191970]/70 max-w-3xl mx-auto leading-relaxed">
+                Transform your Telegram community into a revenue-generating powerhouse with zero effort required
+              </p>
+            </div>
+
+            {/* Enhanced Benefits Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {/* Fully Automated */}
+              <div className="group relative bg-gradient-to-br from-white/80 to-white/60 p-8 rounded-2xl backdrop-blur-sm border border-white/50 hover:border-[#FFD700]/50 hover:shadow-2xl hover:shadow-[#FFD700]/20 transition-all duration-500 hover:-translate-y-2 scroll-animate fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFD700]/80 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#191970] mb-4 group-hover:text-[#FFD700] transition-colors duration-300">
+                    Fully Automated
+                  </h3>
+                  <p className="text-[#191970]/80 leading-relaxed mb-4">
+                    Set it once, earn forever. No management, no maintenance, no hassle.
+                  </p>
+                  <div className="flex items-center text-[#FFD700] font-semibold text-sm">
+                    <Star className="w-4 h-4 mr-2" />
+                    Zero effort required
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/50 p-4 rounded-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all duration-300 scroll-animate fade-in-up">
-                <Shield className="w-10 h-10 text-[#FFD700] mb-3" />
-                <h3 className="text-lg font-bold text-[#191970] mb-2">Transparent System</h3>
-                <p className="text-sm text-[#191970]/80">Clear and transparent reward system you can trust</p>
+
+              {/* Transparent System */}
+              <div className="group relative bg-gradient-to-br from-white/80 to-white/60 p-8 rounded-2xl backdrop-blur-sm border border-white/50 hover:border-[#FFD700]/50 hover:shadow-2xl hover:shadow-[#FFD700]/20 transition-all duration-500 hover:-translate-y-2 scroll-animate fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFD700]/80 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Shield className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#191970] mb-4 group-hover:text-[#FFD700] transition-colors duration-300">
+                    Transparent System
+                  </h3>
+                  <p className="text-[#191970]/80 leading-relaxed mb-4">
+                    Clear, fair, and transparent reward system you can trust completely.
+                  </p>
+                  <div className="flex items-center text-[#FFD700] font-semibold text-sm">
+                    <Star className="w-4 h-4 mr-2" />
+                    100% trustworthy
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/50 p-4 rounded-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all duration-300 scroll-animate fade-in-up">
-                <Bot className="w-10 h-10 text-[#FFD700] mb-3" />
-                <h3 className="text-lg font-bold text-[#191970] mb-2">Built for Telegram</h3>
-                <p className="text-sm text-[#191970]/80">Game built 100% for Telegram and TON blockchain</p>
+
+              {/* Built for Telegram */}
+              <div className="group relative bg-gradient-to-br from-white/80 to-white/60 p-8 rounded-2xl backdrop-blur-sm border border-white/50 hover:border-[#FFD700]/50 hover:shadow-2xl hover:shadow-[#FFD700]/20 transition-all duration-500 hover:-translate-y-2 scroll-animate fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFD700]/80 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Bot className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#191970] mb-4 group-hover:text-[#FFD700] transition-colors duration-300">
+                    Built for Telegram
+                  </h3>
+                  <p className="text-[#191970]/80 leading-relaxed mb-4">
+                    Native Telegram integration with TON blockchain technology.
+                  </p>
+                  <div className="flex items-center text-[#FFD700] font-semibold text-sm">
+                    <Star className="w-4 h-4 mr-2" />
+                    Seamless integration
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/50 p-4 rounded-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all duration-300 scroll-animate fade-in-up">
-                <Users className="w-10 h-10 text-[#FFD700] mb-3" />
-                <h3 className="text-lg font-bold text-[#191970] mb-2">Community Focused</h3>
-                <p className="text-sm text-[#191970]/80">Enhance your community engagement while earning</p>
+
+              {/* Community Focused */}
+              <div className="group relative bg-gradient-to-br from-white/80 to-white/60 p-8 rounded-2xl backdrop-blur-sm border border-white/50 hover:border-[#FFD700]/50 hover:shadow-2xl hover:shadow-[#FFD700]/20 transition-all duration-500 hover:-translate-y-2 scroll-animate fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFD700]/80 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#191970] mb-4 group-hover:text-[#FFD700] transition-colors duration-300">
+                    Community Focused
+                  </h3>
+                  <p className="text-[#191970]/80 leading-relaxed mb-4">
+                    Enhance engagement while earning. Your community wins, you win.
+                  </p>
+                  <div className="flex items-center text-[#FFD700] font-semibold text-sm">
+                    <Star className="w-4 h-4 mr-2" />
+                    Win-win solution
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/50 p-4 rounded-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all duration-300 scroll-animate fade-in-up">
-                <DollarSign className="w-10 h-10 text-[#FFD700] mb-3" />
-                <h3 className="text-lg font-bold text-[#191970] mb-2">Invite Once, Earn Forever</h3>
-                <p className="text-sm text-[#191970]/80">One-time setup for continuous passive income</p>
+
+              {/* Invite Once, Earn Forever */}
+              <div className="group relative bg-gradient-to-br from-white/80 to-white/60 p-8 rounded-2xl backdrop-blur-sm border border-white/50 hover:border-[#FFD700]/50 hover:shadow-2xl hover:shadow-[#FFD700]/20 transition-all duration-500 hover:-translate-y-2 scroll-animate fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFD700]/80 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <DollarSign className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#191970] mb-4 group-hover:text-[#FFD700] transition-colors duration-300">
+                    Invite Once, Earn Forever
+                  </h3>
+                  <p className="text-[#191970]/80 leading-relaxed mb-4">
+                    One-time setup for continuous passive income that scales with activity.
+                  </p>
+                  <div className="flex items-center text-[#FFD700] font-semibold text-sm">
+                    <Star className="w-4 h-4 mr-2" />
+                    Lifetime earnings
+                  </div>
+                </div>
+              </div>
+
+              {/* Revenue Growth */}
+              <div className="group relative bg-gradient-to-br from-white/80 to-white/60 p-8 rounded-2xl backdrop-blur-sm border border-white/50 hover:border-[#FFD700]/50 hover:shadow-2xl hover:shadow-[#FFD700]/20 transition-all duration-500 hover:-translate-y-2 scroll-animate fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFD700]/80 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#191970] mb-4 group-hover:text-[#FFD700] transition-colors duration-300">
+                    Scalable Revenue
+                  </h3>
+                  <p className="text-[#191970]/80 leading-relaxed mb-4">
+                    Earnings grow automatically as your community becomes more active.
+                  </p>
+                  <div className="flex items-center text-[#FFD700] font-semibold text-sm">
+                    <Star className="w-4 h-4 mr-2" />
+                    Unlimited potential
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action Banner */}
+            <div className="relative bg-gradient-to-r from-[#191970] via-[#191970]/95 to-[#191970] p-8 md:p-12 rounded-3xl border border-[#FFD700]/30 scroll-animate scale-in overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#FFD700]/10 via-transparent to-[#FFD700]/10"></div>
+              <div className="relative z-10 text-center">
+                <div className="flex items-center justify-center gap-3 mb-6">
+                  <Sparkles className="w-8 h-8 text-[#FFD700]" />
+                  <h3 className="text-3xl md:text-4xl font-bold text-white">
+                    Ready to Start Earning?
+                  </h3>
+                  <Sparkles className="w-8 h-8 text-[#FFD700]" />
+                </div>
+                <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                  Join the exclusive group of Titan Partners and transform your community into a revenue stream
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-[#FFD700]/30">
+                    <span className="text-[#FFD700] font-bold">⚡ Instant Setup</span>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-[#FFD700]/30">
+                    <span className="text-[#FFD700] font-bold">💰 Immediate Earnings</span>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-[#FFD700]/30">
+                    <span className="text-[#FFD700] font-bold">🚀 Zero Risk</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
